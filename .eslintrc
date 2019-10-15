@@ -4,6 +4,7 @@
         "es6": true,
         "node": true
     },
+    "plugins": ["prettier"],
     "extends": ["plugin:prettier/recommended"],
     "parseOptions": {
         "ecmaVersion": 2018,
