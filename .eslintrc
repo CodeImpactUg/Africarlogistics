@@ -1,24 +1,42 @@
 {
     "env": {
         "commonjs": true,
+        "browser": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "jquery": true
     },
     "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
         "plugin:prettier/recommended"
     ],
-    "parseOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+    "parser": "babel-eslint",
+    "plugins": [
+        "babel"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures":{
+            "jsx": true
+        }
     },
     "rules": {
-        "no-console": "warn",
+        "no-console": "off",
         "no-eval": "error",
-        "prettier/prettier": [
-            "error",
-            {
-                "singleQuote": true
-            }
-        ]
+        "no-undef": "off",
+        "no-invalid-this": 0,
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "prettier/prettier": "error",
+        "jsx-a11y/anchor-is-valid": "off",
+        "babel/new-cap": 1,
+        "babel/camelcase": 1,
+        "babel/no-invalid-this": 0,
+        "babel/object-curly-spacing": 0,
+        "babel/semi": 1,
+        "babel/no-unused-expressions": 0,
+        "babel/valid-typeof": 1
     }
 }
