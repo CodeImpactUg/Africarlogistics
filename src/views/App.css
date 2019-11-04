@@ -1,0 +1,237 @@
+:root {
+	--primary: #000;
+	--secondary: #fff;
+}
+
+/* Back to top button */
+
+.back-to-top {
+	position: fixed;
+	display: none;
+	background: #1853d2;
+	color: #fff;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 1;
+	font-size: 16px;
+	border-radius: 50%;
+	right: 15px;
+	bottom: 15px;
+	transition: background 0.5s;
+	z-index: 11;
+}
+
+.back-to-top i {
+	padding-top: 12px;
+	color: #fff;
+}
+
+/* Prelaoder */
+
+#top,
+#top1 {
+    background-color: #fff;
+    min-height: 40px;
+}
+
+#top-links,
+#top-links1 {
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+}
+
+#top-links ul,
+#top-links1 ul {
+    padding: 20px 0px 13px;
+    margin: 0px;
+    line-height: 18px;
+}
+
+#top-links ul li,
+#top-links1 ul li {
+    padding: 0px 0 0 17px;
+}
+
+#top-links ul li:first-child,
+#top-links1 ul li:first-child {
+    padding: 0px 0 0 0px;
+}
+
+#top-links ul li:last-child a,
+#top-links1 ul li:last-child a {
+    border-right: 0;
+    padding-right: 0;
+}
+
+#top-links .button li:first-child a:first-child,
+#top-links1 .button li:first-child a:first-child {
+    border-right: 0;
+}
+
+.login-reg span{
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+
+#top-links ul li a,
+#top-links1 ul li a {
+    color: #000;
+    font-size: 14px;
+    border-right: 1px solid #000;
+    padding-right: 17px;
+    vertical-align: middle;
+    font-weight: 400;
+}
+#top-links ul li a, #top-links1 ul li.login-reg a{
+    padding-right: 10px;
+}
+
+#top-links ul li a i,
+#top-links1 ul li a i {
+    margin-right: 8px;
+}
+
+#form-currency .btn-link,
+#form-language .btn-link {
+    padding: 0;
+    color: #000;
+    font-size: 14px;
+    border:none;
+    border-right: 1px solid #000;
+    padding-right: 17px;
+    border-radius: 0;
+}
+
+#form-currency .btn-link {
+    border-right: 0;
+}
+
+#form-currency .dropdown-menu>li>.btn-link,
+#form-language .dropdown-menu>li>a {
+    border-right: 0px solid #000;
+    padding-right: 0;
+}
+
+#form-currency .dropdown-menu>li {
+    padding: 0px 0 0 0px;
+}
+
+#form-language .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 3px;
+}
+
+#top #form-currency .currency-select,
+#top #form-language .language-select {
+    text-align: left;
+}
+
+.btn-group .dropdown-menu {
+    padding: 5px !important;
+}
+
+#top #form-currency .currency-select:hover,
+#top #form-language .language-select:hover {
+    text-shadow: none;
+    background-color: #f5f5f5;
+    color: #010101;
+}
+
+
+
+
+/*--------------------
+[ Header / header ]
+---------------------*/
+
+.site-header {
+    margin: 30px 0 35px;
+}
+
+#logo a > img {
+    margin: 0 auto;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+
+#header .button-login .btn-default {
+    background: rgb(22, 21, 21);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 21px;
+    border-radius: 0px;
+    border: none;
+    line-height: 16px;
+    margin-right: 14px;
+}
+
+#header .button-login .btn-default:active:hover {
+    color: #fff;
+    background: #FCB714;
+}
+
+#header .button-login .btn-primary {
+    background: transparent;
+    border: none;
+    color: #09357a;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    vertical-align: sub;
+}
+#header .button-login .btn-primary i{
+    color: #09357a;
+    font-size: 30px;
+    vertical-align: inherit;
+}
+#header .button-login .btn-primary:hover,
+#header .button-login .btn-primary:active:hover,
+#header .button-login .btn-primary:focus,
+#header .button-login .btn-primary:active:focus {
+    background: transparent;
+    color: #413F4D;
+}
+
+#header .social-icon {
+    padding: 8px 0 0 0;
+}
+
+#header .social-icon ul {
+    margin: 0;
+}
+
+#header .social-icon ul li {
+    padding: 3px 8px 5px 7px;
+    background: transparent;
+    line-height: 16px;
+    margin-right: 4px;
+}
+
+#header .social-icon ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+
+/*--------------------------------- 
+[ menu / #menu ]
+----------------------------------- */
+.list-inline {
+    display: flex;
+}
+
+.navbar-dark{
+    color: #fff;
+    background: rgb(22, 21, 21);
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
