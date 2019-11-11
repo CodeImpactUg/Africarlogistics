@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/CodeImpactUg/Africarlogistics/precache-manifest.a6fd49d08452cd8e0dbd410d81cb9ee6.js"
+  "/CodeImpactUg/Africarlogistics/precache-manifest.2af1c558c49fb445d1177c161b8fb4dc.js"
 );
 
 self.addEventListener('message', (event) => {
