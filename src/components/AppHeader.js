@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "../assets/css/bootstrap/css/bootstrap.min.css";
 import "../assets/css/responsive.css";
 import "../assets/css/bootstrap/css/bootstrap-dropdownhover.css";
@@ -7,25 +8,7 @@ import "../views/App.css";
 import logo from "../assets/img/codeimpact.jpg";
 
 class AppHeader extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      menu: true,
-    };
-    this.toggleMenu = this.toggleMenu.bind(this);
-  }
-
-  toggleMenu() {
-    this.setState({ menu: !this.state.menu });
-  }
   render() {
-    const collapse = this.state.menu;
-    const classOne = collapse
-      ? "collapse navbar-collapse"
-      : "collapse navbar-collapse show";
-    const classTwo = collapse
-      ? "navbar-toggler navbar-toggler-right collapse"
-      : "navbar-toggler navbar-toggler-right";
     return (
       <div id="appheader">
         <div id="top">
@@ -206,195 +189,109 @@ class AppHeader extends Component {
           </div>
         </div>
         <div id="menu" className="default-bg">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
               <div className="col-sm-12 col-md-12 col-xs-12 responsive_padding_btm">
-                <nav className="navbar navbar-expand-lg navbar-dark transparent-nav">
-                  <a className="navbar-brand" href="#/">
-                    {" "}
-                  </a>
-                  <button
-                    onClick={this.toggleMenu}
-                    className={`${classTwo}`}
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="navbar-toggler-icon"></span>
-                  </button>
-                  <div className={`${classOne}`} id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
-                      <li className="nav-item active">
-                        <a className="nav-link" href="#/">
-                          Home <span className="sr-only">(current)</span>
-                        </a>
-                      </li>
-
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#/"
-                          id="navbarDropdown"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          {" "}
-                          Pages{" "}
-                        </a>
-                        <div
-                          className="dropdown-menu"
-                          aria-labelledby="navbarDropdown"
-                        >
-                          <a className="dropdown-item" href="#/">
-                            Action
-                          </a>
-                          <a className="dropdown-item" href="#/">
-                            Another action
-                          </a>
-                          <div className="dropdown-divider"></div>
-                          <a className="dropdown-item" href="#/">
-                            Something else here
-                          </a>
-                        </div>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#/"
-                          id="navbarDropdown"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          {" "}
-                          Tour{" "}
-                        </a>
-                        <div
-                          className="dropdown-menu"
-                          aria-labelledby="navbarDropdown"
-                        >
-                          <a className="dropdown-item" href="#/">
-                            Action
-                          </a>
-                          <a className="dropdown-item" href="#/">
-                            Another action
-                          </a>
-                          <div className="dropdown-divider"></div>
-                          <a className="dropdown-item" href="#/">
-                            Something else here
-                          </a>
-                        </div>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#/"
-                          id="navbarDropdown"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          {" "}
-                          Hotels{" "}
-                        </a>
-                        <div
-                          className="dropdown-menu"
-                          aria-labelledby="navbarDropdown"
-                        >
-                          <a className="dropdown-item" href="#/">
-                            Action
-                          </a>
-                          <a className="dropdown-item" href="#/">
-                            Another action
-                          </a>
-                          <div className="dropdown-divider"></div>
-                          <a className="dropdown-item" href="#/">
-                            Something else here
-                          </a>
-                        </div>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#/"
-                          id="navbarDropdown"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          {" "}
-                          Cars{" "}
-                        </a>
-                        <div
-                          className="dropdown-menu"
-                          aria-labelledby="navbarDropdown"
-                        >
-                          <a className="dropdown-item" href="#/">
-                            Action
-                          </a>
-                          <a className="dropdown-item" href="#/">
-                            Another action
-                          </a>
-                          <div className="dropdown-divider"></div>
-                          <a className="dropdown-item" href="#/">
-                            Something else here
-                          </a>
-                        </div>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle"
-                          href="#/"
-                          id="navbarDropdown"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          {" "}
-                          Flights{" "}
-                        </a>
-                        <div
-                          className="dropdown-menu"
-                          aria-labelledby="navbarDropdown"
-                        >
-                          <a className="dropdown-item" href="#/">
-                            Action
-                          </a>
-                          <a className="dropdown-item" href="#/">
-                            Another action
-                          </a>
-                          <div className="dropdown-divider"></div>
-                          <a className="dropdown-item" href="#/">
-                            Something else here
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                    <form className="form-inline my-2 my-lg-0">
-                      <input
-                        className="form-control mr-sm-2"
-                        type="search"
+                <Navbar
+                  bg="dark"
+                  expand="lg"
+                  variant="dark"
+                  sticky="top"
+                  className="navbar"
+                >
+                  <Navbar.Brand href="#home"> </Navbar.Brand>
+                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                  <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto nav-links ml-auto">
+                      <Nav.Link href="#home" className="active">
+                        Home
+                      </Nav.Link>
+                      <NavDropdown title="Pages" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">
+                          Action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">
+                          Another action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">
+                          Something
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">
+                          Separated link
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                      <NavDropdown title="Tour" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">
+                          Action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">
+                          Another action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">
+                          Something
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">
+                          Separated link
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                      <NavDropdown title="Hotels" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">
+                          Action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">
+                          Another action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">
+                          Something
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">
+                          Separated link
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                      <NavDropdown title="Cars" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">
+                          Action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">
+                          Another action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">
+                          Something
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">
+                          Separated link
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                      <NavDropdown title="Flights" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">
+                          Action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">
+                          Another action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">
+                          Something
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">
+                          Separated link
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                    </Nav>
+                    {/* <Form inline>
+                      <FormControl
+                        type="text"
                         placeholder="Search"
-                        aria-label="Search"
+                        className="mr-sm-2"
                       />
-                      <button
-                        className="btn btn-outline-light my-2 my-sm-0"
-                        type="submit"
-                      >
-                        Search
-                      </button>
-                    </form>
-                  </div>
-                </nav>
+                      <Button variant="outline-light">Search</Button>
+                    </Form> */}
+                  </Navbar.Collapse>
+                </Navbar>
               </div>
             </div>
           </div>
