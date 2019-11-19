@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "../assets/css/bootstrap/css/bootstrap.min.css";
 import "../assets/css/responsive.css";
 import "../assets/css/bootstrap/css/bootstrap-dropdownhover.css";
@@ -196,7 +189,7 @@ class AppHeader extends Component {
           </div>
         </div>
         <div id="menu" className="default-bg">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
               <div className="col-sm-12 col-md-12 col-xs-12 responsive_padding_btm">
                 <Navbar
@@ -209,8 +202,10 @@ class AppHeader extends Component {
                   <Navbar.Brand href="#home"> </Navbar.Brand>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto nav-links">
-                      <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav className="mr-auto nav-links ml-auto">
+                      <Nav.Link href="#home" className="active">
+                        Home
+                      </Nav.Link>
                       <NavDropdown title="Pages" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">
                           Action
@@ -287,14 +282,6 @@ class AppHeader extends Component {
                         </NavDropdown.Item>
                       </NavDropdown>
                     </Nav>
-                    <Form inline>
-                      <FormControl
-                        type="text"
-                        placeholder="Search"
-                        className="mr-sm-2"
-                      />
-                      <Button variant="outline-success">Search</Button>
-                    </Form>
                   </Navbar.Collapse>
                 </Navbar>
               </div>
