@@ -1,0 +1,183 @@
+.footer {
+    background-color: #1c138f   ;
+    padding: 80px 0;
+}
+
+.footer_flex-container {
+    display: flex;
+}
+
+.col__col-3 {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.col__col-3 h3 {
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.footer_logo {
+    width: 100px;
+    height: 80px;
+}
+
+.paragraph {
+    color: #fff;
+    padding-top: 50px;
+    font-size: 120%;
+}
+
+.places_wrapper {
+    display: flex;
+    padding: 10px 0;
+}
+
+.places_info {
+    display: flex;
+}
+
+.places_info i {
+    color: #dddcdc;
+    margin-right: 3px;
+}
+.places_info p {
+    color: #2ca825;
+    font-size: 120%;
+}
+
+.places_info span {
+    color: #949494;
+}
+
+.places_wrapper h4 {
+    font-size: 130%;
+    color: #dddcdc;
+}
+
+.places_img {
+    width: 120px;
+    height: 90px;
+    margin-right: 18px;
+}
+
+
+
+.contact_info {
+    list-style: none;
+    font-size: 105%;
+    color: #dddcdc;
+    padding: 0;
+}
+
+.contact_info li {
+    padding: 13px 0;
+    display: flex;
+}
+
+.contact_info i {
+    padding-right: 10px;
+    margin: 7px 0;
+    font-size: 170%;
+    color: #2ca825;
+}
+
+
+
+/* ----- FOOTER MEDIA QUERY ----- */
+
+
+@media (max-width: 1024px) {
+    .places_img {
+        margin-right: 5px;
+    }
+
+    .contact_info i {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 812px) {
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer_flex-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 80px;
+    }
+
+    .footer_logo {
+        width: 50%;
+        height: 170px;
+    }
+
+    .paragraph {
+        padding-top: 20px;
+    }
+
+    .col__col-3 {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .col__col-3 h3 {
+        font-size: 180%;
+    }
+
+    .places_wrapper {
+        width: 60%;
+        padding-left: 30px
+    }
+
+    .contact_info {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .contact_info li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 736px) {
+    .footer_flex-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .places_wrapper {
+        width: 100%;
+        padding-left: 30px
+    }
+}
+
+@media (max-width: 414px) {
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer_flex-container {
+        padding: 10px 10px;
+    }
+
+    .footer_logo {
+        width: 40%;
+        height: 80px;
+    }
+
+    .places_wrapper {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .contact_info {
+        padding-left: 15px;
+    }
+
+    .contact_info li {
+        width: 80%;
+    }
+}
