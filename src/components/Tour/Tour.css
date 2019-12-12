@@ -28,7 +28,7 @@
     display: flex;
     list-style: none;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .tour_tour_nav li {
@@ -47,6 +47,7 @@
 
 .tour_list_container {
     padding-top: 40px;
+    overflow: hidden;
 }
 
 .tour_list {
@@ -55,15 +56,14 @@
     margin: 0;
     padding: 0;
     display: flex;
-    overflow: hidden;
+    
+    transform: scale(1.06);
    
 }
 
 .tour_list li {
     width: 25%;
-    height: 270px;
     position: relative;
-    margin: 0;
 }
 
 figure {
@@ -73,7 +73,7 @@ figure {
 
 figcaption {
     position: absolute;
-    top: 23%;
+    top: 40%;
     left: 35%;
     opacity: 0;
     z-index: 100;
@@ -123,16 +123,20 @@ figcaption a:hover {
 
 @media (max-width: 812px) {
     .tour_list {
-        width: 100%;
         flex-wrap: wrap;
         
     }
     .tour_list li {
         width: 50%;
+        transform: scale(1.06);
     }
 
     .tour_tour_nav {
         padding: 0 20px;
+    }
+
+    .tour_tour_nav {
+        flex-wrap: wrap ;
     }
 }
 
@@ -143,7 +147,6 @@ figcaption a:hover {
 
     .tour_list li {
         width: 100%;
-        height: 280px;
     }
 
     .fig_img {
