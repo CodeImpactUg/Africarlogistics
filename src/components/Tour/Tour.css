@@ -1,0 +1,143 @@
+.tour_section {
+    padding: 70px 0;
+}
+
+.tour_section h2 {
+    text-align: center;
+    font-size: 240%;
+    margin-bottom: 15px;
+}
+
+.line_separator {
+    width: 160px;
+    border-bottom: 1px solid #cfcfcf;
+    display: block;
+    margin: 0 auto;
+}
+
+.line_separator::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #27ae60;
+    margin: 0 auto;
+}
+
+.tour_tour_nav {
+    display: flex;
+    list-style: none;
+}
+
+.tour_tour_nav li {
+    padding: 0 15px;
+}
+
+.tour_tour_nav a {
+    text-decoration: none;
+    font-size: 180%;
+    color: #cfcfcf;
+}
+
+.tour_list_container {
+    padding-top: 40px;
+}
+
+.tour_list {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+   
+}
+
+.tour_list li {
+    width: 25%;
+    height: 270px;
+    position: relative;
+    margin: 0;
+}
+
+figure {
+    width: 100%;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    top: 23%;
+    left: 35%;
+    opacity: 0;
+    z-index: 100;
+}
+
+figcaption h4 {
+    text-transform: uppercase;
+    font-size: 115%;
+    color: #fff;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: #fff;
+}
+
+figcaption a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tour_list li:hover figcaption {
+    opacity: 1;
+    transition: 1s;
+}
+
+.fig_img {
+    width: 100%;
+}
+
+.img_background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fbc53188, #da2a4798);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.tour_list li:hover .img_background {
+    opacity: 1;
+    transition: 1s ease-out;
+}
+
+
+
+@media (max-width: 812px) {
+    .tour_list {
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+    .tour_list li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 414px) {
+    .tour_list {
+        flex-direction: column;
+    }
+
+    .tour_list li {
+        width: 100%;
+        height: 280px;
+    }
+
+    .fig_img {
+        max-width: 100%;
+    }
+}
+
