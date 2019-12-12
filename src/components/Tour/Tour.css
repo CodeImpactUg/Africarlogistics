@@ -27,6 +27,8 @@
 .tour_tour_nav {
     display: flex;
     list-style: none;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .tour_tour_nav li {
@@ -36,7 +38,11 @@
 .tour_tour_nav a {
     text-decoration: none;
     font-size: 180%;
-    color: #cfcfcf;
+    color: #6e6e6e;
+}
+
+.tour_tour_nav a:hover {
+    color: #27ae60;
 }
 
 .tour_list_container {
@@ -123,6 +129,10 @@ figcaption a:hover {
     }
     .tour_list li {
         width: 50%;
+    }
+
+    .tour_tour_nav {
+        padding: 0 20px;
     }
 }
 
