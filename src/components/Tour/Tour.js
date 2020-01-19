@@ -31,91 +31,87 @@ const Tour = props => (
                 <a href="/">Villa</a>
             </li>
         </ul>
-        <div className="tour_list_container">
-        <ul className="tour_list">
-            <li>
-                <figure>
-                    <img src={tour1} alt="List one" className="fig_img" />
-                    <figcaption>
-                        <h4>World Tour</h4>
-                        <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
-                    </figcaption>
-                </figure>
-                <div className="img_background"></div>
-            </li>
-            <li>
-                <figure>
-                    <img src={tour2} alt="List two" className="fig_img" />
-                    <figcaption>
-                        <h4>World Tour</h4>
-                        <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
-                    </figcaption>
-                </figure>
-                <div className="img_background"></div>
-            </li>
-            <li>
-                <figure>
-                    <img src={tour3} alt="List three" className="fig_img" />
-                    <figcaption>
-                        <h4>World Tour</h4>
-                        <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
-                    </figcaption>
-                </figure>
-                <div className="img_background"></div>
-            </li>
-            <li>
-                <figure>
-                    <img src={tour4} alt="List four" className="fig_img" />
-                    <figcaption>
-                        <h4>World Tour</h4>
-                        <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
-                    </figcaption>
-                </figure>
-                <div className="img_background"></div>
-            </li>
-        </ul>
-        <ul className="tour_list">
-            <li>
-                <figure>
-                    <img src={tour5} alt="List five" className="fig_img" />
-                    <figcaption>
-                        <h4>World Tour</h4>
-                        <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
-                    </figcaption>
-                </figure>
-                <div className="img_background"></div>
-            </li>
-            <li>
-                <figure>
-                    <img src={tour6} alt="List six" className="fig_img" />
-                    <figcaption>
-                        <h4>World Tour</h4>
-                        <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
-                    </figcaption>
-                </figure>
-                <div className="img_background"></div>
-            </li>
-            <li>
-                <figure>
-                    <img src={tour7} alt="List seven" className="fig_img" />
-                    <figcaption>
-                        <h4>World Tour</h4>
-                        <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
-                    </figcaption>
-                </figure>
-                <div className="img_background"></div>
-            </li>
-            <li>
-                <figure>
-                    <img src={tour8} alt="List eight" className="fig_img" />
-                    <figcaption>
-                        <h4>World Tour</h4>
-                        <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
-                    </figcaption>
-                </figure>
-                <div className="img_background"></div>
-            </li>
-        </ul>
+        <div className="tour_grid_container">
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour1} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour2} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour3} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour4} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour5} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour6} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour7} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour8} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour1} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div className="tour_content">
+                <div className="img_background" />
+                <img src={tour1} alt="Tour Img" />
+                <div className="more_info">
+                    <h4>World Tour</h4>
+                    <a href="/">View More <i className="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 );

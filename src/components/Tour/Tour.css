@@ -28,7 +28,7 @@
     display: flex;
     list-style: none;
     justify-content: center;
-    padding-top: 40px;
+    padding: 40px 0;
 }
 
 .tour_tour_nav li {
@@ -45,62 +45,16 @@
     color: #27ae60;
 }
 
-.tour_list_container {
-    padding-top: 40px;
-    overflow: hidden;
+.tour_grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.tour_list {
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-    transform: scale(1.06);
-   
-}
-
-.tour_list li {
-    width: 25%;
+.tour_content {
     position: relative;
 }
 
-figure {
-    width: 100%;
-    position: relative;
-}
-
-figcaption {
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    opacity: 0;
-    z-index: 100;
-}
-
-figcaption h4 {
-    text-transform: uppercase;
-    font-size: 115%;
-    color: #fff;
-}
-
-figcaption a {
-    text-decoration: none;
-    color: #fff;
-}
-
-figcaption a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-.tour_list li:hover figcaption {
-    opacity: 1;
-    transition: 1s;
-}
-
-.fig_img {
+.tour_content img {
     width: 100%;
 }
 
@@ -114,43 +68,45 @@ figcaption a:hover {
     opacity: 0;
 }
 
-.tour_list li:hover .img_background {
+.more_info {
+    position: absolute;
+    top: 40%;
+    left: 31%;
+    opacity: 0;
+} 
+
+.tour_content:hover .img_background {
     opacity: 1;
-    transition: 1s ease-out;
+    transition: 1s;
 }
 
-
-
-@media (max-width: 812px) {
-    .tour_list {
-        flex-wrap: wrap;
-        
-    }
-    .tour_list li {
-        width: 50%;
-        transform: scale(1.06);
-    }
-
-    .tour_tour_nav {
-        padding: 0 20px;
-    }
-
-    .tour_tour_nav {
-        flex-wrap: wrap ;
-    }
+.tour_content:hover .more_info {
+    opacity: 1;
+    transition: 1s;
 }
+
+.more_info h4 {
+    color: #fff;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+
+.more_info a {
+    text-decoration: none;
+    font-size: 105%;
+    color: #fff;
+
+}
+
 
 @media (max-width: 414px) {
-    .tour_list {
-        flex-direction: column;
+    .tour_tour_nav {
+        padding: 40px 30px;
+        flex-wrap: wrap;
     }
 
-    .tour_list li {
-        width: 100%;
+    .tour_tour_nav li {
+        padding: 0 10px;
     }
-
-    .fig_img {
-        max-width: 100%;
-    }
-}
+}    
 
