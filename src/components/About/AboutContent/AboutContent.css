@@ -1,0 +1,140 @@
+.about_content {
+    padding: 5% 0;
+    display: flex;
+}
+
+.about_cont_text {
+    width: 55%;
+}
+
+.about_cont_img {
+    width: 45%;
+}
+
+.about_cont_text h2 {
+    font-size: 240%;
+    font-weight: bold;
+}
+
+.line_separator {
+    width: 170px;
+    margin: 29px 0;  
+    margin-left: 0; 
+}
+
+.line_separator::after {
+    content: " ";
+    display: block;
+    width: 70px;
+    height: 5px;
+    background-color: #2ecc71;
+    margin: 0;
+}
+
+.main_par {
+    font-size: 105%;
+    line-height: 1.8rem;
+    color: #8a8989;
+    padding-top: 20px;
+}
+
+
+.about_features {
+    width: 80%;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.about_features p {
+    font-weight: bold;
+    color: #8a8989;
+}
+
+.about_features i {
+    padding-right: 20px;
+    font-size: 120%;
+    color: #2ecc71;
+}
+
+/* ------CARDS STYLES---------- */
+
+.about_content_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    padding-bottom: 80px;
+}
+
+.about_content_wrapper .card {
+    border: 2px solid #b8b8b8;
+    border-radius: 0;
+    position: relative;
+}
+
+.card_bg {
+    background: url('../../../assets/img/services-bg.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card_cont {
+    padding: 30px;
+}
+
+.card_cont h3 {
+    font-size: 120%;
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.card_cont p {
+    font-size: 90%;
+    color: #6e6e6e;
+    line-height: 1.6rem;
+}
+
+.card_icon i {
+    font-size: 250%;
+    color: #8a8989;
+}
+
+
+.about_content_wrapper .card:hover .card_icon i {
+    color: #12d864;
+    transition: .30s;
+}
+
+.about_content_wrapper .card:hover .card_bg {
+    opacity: 1;
+}
+
+
+
+
+/* ---------MEDIA QUERY---------- */
+
+@media (max-width: 1024px) {
+    .about_content {
+        padding: 5% 0;
+        flex-direction: column-reverse;
+    }
+
+    .about_cont_text {
+        width: 100%;
+    }
+
+    .about_features{
+        width: 100%;
+    }
+
+    .about_cont_img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .about_cont_img img {
+        width: 100%;
+    }
+}
