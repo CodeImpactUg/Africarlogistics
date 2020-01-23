@@ -1,0 +1,46 @@
+.form {
+    background-color: #f1f0f0;
+    padding: 50px 25px;
+}
+
+.label_input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.label_input label {
+    color: #868686;
+}
+
+.label_input input {
+    padding: 9px 15px;
+    border: 1px solid #cccccc;
+}
+
+.label_input input:checked {
+    border: 1px solid #44bd32;
+}
+
+.label_input input:focus {
+    outline: none;
+    border: 1px solid #44bd32;
+}
+
+.submit_btn {
+    padding: 9px 35px;
+    border: transparent;
+    border-radius: 20px;
+    background-color: #44bd32;
+    color: #ffffff;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 414px) {
+    .submit_btn {
+        width: 100%;
+    }
+}

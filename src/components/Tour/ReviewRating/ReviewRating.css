@@ -1,0 +1,33 @@
+.review_rating {
+    padding: 30px 0;
+}
+
+.review_rating h5 {
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+.star_rating {
+    padding: 5px 0;
+}
+
+
+.star_rating_wrapper,
+.package_review_wrapper {
+    padding-top: 30px;
+}
+
+.package_rating input,
+.star_rating input {
+    margin-right: 14px;
+}
+
+.star_rating i {
+    padding: 0 6px;
+    color: #44bd32;
+}
+
+
+.package_rating p {
+    color: #818181;
+}
