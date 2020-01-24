@@ -12,7 +12,7 @@ class AppHeader extends Component {
     return (
       <div id="appheader">
         <div id="top">
-          <div className="container">
+          <div className="container-fluid">
             <div id="top-links" className="nav">
               <ul className="list-inline inline-2">
                 <li>

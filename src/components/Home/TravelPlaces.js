@@ -1,24 +1,15 @@
 import React, { Component } from "react";
-import "../assets/css/bootstrap/css/bootstrap.min.css";
-import "../assets/css/responsive.css";
-import "../assets/css/venobox.css";
-import "../assets/css/animate.min.css";
-import "../assets/css/magnific-popup.css";
-import "../assets/css/lightslider.css";
-import "../assets/css/owl.carousel.min.css";
-import "../assets/owlcarousel/css/owl.carousel.css";
-import "../assets/owlcarousel/css/owl.theme.css";
-import "../assets/css/media-queries.css";
-import "../assets/css/bootstrap/css/bootstrap-dropdownhover.css";
-import "../assets/fontawesome/fonts/line-awesome-font-awesome.min.css";
-import "../views/App.css";
+import "../../assets/css/bootstrap/css/bootstrap.min.css";
+import "../../assets/css/media-queries.css";
+import "../../assets/fontawesome/fonts/line-awesome-font-awesome.min.css";
+import "../../views/App.css";
 import ReactWOW from "react-wow";
-import p1 from "../assets/img/places/p1.jpg";
-import p2 from "../assets/img/places/p2.jpg";
-import p3 from "../assets/img/places/p3.jpg";
-import p4 from "../assets/img/places/p4.jpg";
-import p5 from "../assets/img/places/p5.jpg";
-import p6 from "../assets/img/places/p6.jpg";
+import p1 from "../../assets/img/places/p1.jpg";
+import p2 from "../../assets/img/places/p2.jpg";
+import p3 from "../../assets/img/places/p3.jpg";
+import p4 from "../../assets/img/places/p4.jpg";
+import p5 from "../../assets/img/places/p5.jpg";
+import p6 from "../../assets/img/places/p6.jpg";
 
 class TravelPlaces extends Component {
   render() {
