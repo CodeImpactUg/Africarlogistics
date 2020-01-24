@@ -12,10 +12,7 @@ class AppHeaderSlider extends Component {
   render() {
     return (
       <div id="slider">
-        <section
-          className="welcome-image-area5"
-          data-stellar-background-ratio="0.6"
-        >
+        <section className="welcome-image-area5">
           <div className="display-table">
             <div className="display-table-cell5">
               <div className="container">
@@ -28,7 +25,7 @@ class AppHeaderSlider extends Component {
                         get started.
                       </h2>
                       <ReactWOW animation="fadeInRight" delay="0.5s">
-                        <div className="slide-detail col-md-5">
+                        <div className="slide-detail col-md-9 col-lg-5">
                           <form className="form-horizontal" method="post">
                             <div className="form-group">
                               <div className="col-sm-12">
