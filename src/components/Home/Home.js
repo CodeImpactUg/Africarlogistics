@@ -10,9 +10,18 @@ class Home extends Component {
   render() {
     return (
       <Fragment>
+<<<<<<< HEAD
         <AppHeaderSlider />
         <TravelPlaces />
         <ClientsReviews />
+=======
+        <AppLoader />
+        <AppHeader />
+        <AppHeaderSlider />
+        <TravelPlaces />
+        <ClientReviews />
+        <Gallery />
+>>>>>>> feature gallery
       </Fragment>
     );
   }
