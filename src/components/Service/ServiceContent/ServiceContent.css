@@ -1,0 +1,100 @@
+.service_content {
+    padding: 50px 0;
+}
+
+.long_card_wrapper span {
+    font-weight: lighter;
+}
+
+.long_card {
+    display: flex;
+    margin: 50px 0;
+    border: transparent;
+    box-shadow: 2px 0 15px 1px #9c9c9c;
+}
+
+.long_card_img {
+    width: 100%;
+}
+
+.long_card_img img {
+    width: 100%;
+}
+
+.long_card_cont {
+    padding: 30px 50px;
+}
+
+.long_card_cont h3 {
+    font-size: 170%;
+    font-weight: bold;
+}
+
+.long_card_cont p {
+    font-size: 95%;
+    line-height: 1.8rem;
+}
+
+.card_cont_sep {
+    width: 3px;
+    margin-bottom: 30px;
+    background-color: #bebebe;
+}
+
+.long_card_info {
+    padding: 30px 50px;
+}
+
+.long_card_info h3 {
+    font-size: 170%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.long_card_rate {
+    padding: 20px 0;
+}
+
+.long_card_rate span {
+    font-size: 5%;
+    font-weight: 100;
+}
+
+.long_card_rate i {
+    font-size: 60%;
+    color: #44bd32;
+}
+
+.long_card_rate i:nth-child(5) {
+    color: #cccccc;
+}
+
+.booking_btn {
+    background-color: #44bd32;
+    padding: 8px 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.booking_btn:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 1024px) {
+    .long_card {
+        flex-direction: column;
+    }
+
+    .card_cont_sep {
+        display: none;
+    }
+
+    .long_card_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
