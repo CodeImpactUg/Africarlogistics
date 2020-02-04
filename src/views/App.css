@@ -3,17 +3,11 @@
 	--secondary: #fff;
 }
 
-.container-fluid{
-	padding: 0 !important;
-	width: 1310px !important;
-	height: auto;
-}
-
 /* Back to top button */
 
 .back-to-top {
 	position: fixed;
-	display: none;
+	display: block;
 	background: #1853d2;
 	color: #fff;
 	width: 44px;
@@ -33,7 +27,10 @@
 	color: #fff;
 }
 
-/* Prelaoder */
+.navbar{
+    width: auto !important;
+}
+/* Preloder */
 
 #top,
 #top1 {
