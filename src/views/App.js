@@ -1,22 +1,23 @@
 import React, { Component, Fragment } from "react";
 import AppLoader from "../components/AppLoader";
 import AppHeader from "../components/AppHeader";
-import AppHeaderSlider from "../components/AppHeaderSlider";
-import TravelPlaces from "../components/TravelPlaces";
-import ClientsReviews from "../components/ClientsReviews";
-import Footer from "../components/Footer/Footer"
+import Footer from "../components/Footer/Footer";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "../components/Home/Home";
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        <AppLoader />
-        <AppHeader />
-        <AppHeaderSlider />
-        <TravelPlaces />
-        <ClientsReviews />
-        <Footer />
-      </Fragment>
+      <BrowserRouter>
+        <Switch>
+          <Fragment>
+            <AppLoader />
+            <AppHeader />
+            <Route path="/" exact component={Home} />
+            <Footer />
+          </Fragment>
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
