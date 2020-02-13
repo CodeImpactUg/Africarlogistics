@@ -4,6 +4,7 @@ import AppHeader from "../components/AppHeader";
 import AppHeaderSlider from "../components/AppHeaderSlider";
 import TravelPlaces from "../components/TravelPlaces";
 import ClientsReviews from "../components/ClientsReviews";
+import Footer from "../components/Footer/Footer"
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <AppHeaderSlider />
         <TravelPlaces />
         <ClientsReviews />
+        <Footer />
       </Fragment>
     );
   }
