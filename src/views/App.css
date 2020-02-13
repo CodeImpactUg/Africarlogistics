@@ -13,7 +13,7 @@
 
 .back-to-top {
 	position: fixed;
-	display: none;
+	display: block;
 	background: #1853d2;
 	color: #fff;
 	width: 44px;
@@ -33,7 +33,10 @@
 	color: #fff;
 }
 
-/* Prelaoder */
+.navbar{
+    width: auto !important;
+}
+/* Preloder */
 
 #top,
 #top1 {
@@ -640,6 +643,191 @@
     text-align: right;
 }
 
+/* Contacts */
+
+.map1 iframe {
+    width: 100%;
+    height: 350px;
+}
+
+.contact-area {
+    background: #fff;
+}
+
+.contact-sec {
+    background: url(../assets/img/contactsecbg.png) no-repeat;
+    background-size: cover;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.contact-icon {
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 9px;
+}
+
+.contact-icon i {
+    font-size: 40px;
+    color: #000;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+/* .single-contact:hover .contact-icon i {}
+
+.single-contact {} */
+
+.single-contact h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #bbb;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-family:"Roboto", sans-serif;
+}
+.form-control::placeholder{
+    color: #bbb;
+}
+.welcome-image-area .form-control::placeholder{
+    color: #bbb;
+}
+.welcome-image-area .form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 50px!important;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #bbb;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    padding: 10px 110px 14px 50px;
+    border: 1px solid #ccc;
+    background: #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-family:"Roboto", sans-serif;
+}
+.form-control:focus {
+    border-color: #62ac1e;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form input[type='submit'] {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 25px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #62ac1e;
+    background-color: #62ac1e;
+    border-radius: 0px;
+    font-weight: 700;
+    float: left;
+    font-family: "Raleway", sans-serif;
+}
+.contact-form input[type='submit']:hover{
+    background-color: #fff;
+    color: #62ac1e;
+}
+.text-right .actions{
+    float: right;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.success {
+    background: #50B948 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-socials ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+.contact-socials ul li:hover a{
+    color: #62ac1e;
+}
+.contact-socials ul li a {
+    color: #777;
+    font-size: 24px;
+}
+
+.contact-icon-box>i {
+    text-align: center;
+}
+
+.contact-icon-box>i {
+    display: block;
+    width: 70px;
+    float: left;
+    line-height: 70px;
+    color: #fff;
+    font-size: 3em;
+    margin-right: 15px;
+}
+
+.contact-icon-box {
+    height: 70px;
+    background: #fff;
+    line-height: 70px;
+    text-transform: none;
+}
+
+.contact-icon-box .description {
+    line-height: 1.6em;
+    padding: 14px 15px 0 0;
+}
+
+
+
+
 /* Clients Reviews */
 #testimonials {
 	padding: 30px 0;
@@ -653,12 +841,7 @@
   }
   
   #testimonials .clients-item {
-	box-sizing: content-box;
-	padding: 30px 30px 0 30px;
-	margin: 30px 15px;
 	text-align: center;
-	min-height: 350px;
-	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   }
   
   #testimonials .clients-item .testimonial-img {

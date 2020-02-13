@@ -11,17 +11,23 @@ class Home extends Component {
     return (
       <Fragment>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <AppHeaderSlider />
         <TravelPlaces />
         <ClientsReviews />
 =======
+=======
+>>>>>>> c73ef342483bf8f9a81d00ff24bf3e55e29c09a7
         <AppLoader />
         <AppHeader />
         <AppHeaderSlider />
         <TravelPlaces />
         <ClientReviews />
         <Gallery />
+<<<<<<< HEAD
 >>>>>>> feature gallery
+=======
+>>>>>>> c73ef342483bf8f9a81d00ff24bf3e55e29c09a7
       </Fragment>
     );
   }
