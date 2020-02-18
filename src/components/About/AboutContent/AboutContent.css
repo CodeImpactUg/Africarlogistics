@@ -111,6 +111,14 @@
 }
 
 
+/* -----  CAROUSEL ADDITION INFO ------ */
+
+
+.carousel-indicators {
+    display: none;
+}
+
+
 
 
 /* ---------MEDIA QUERY---------- */

@@ -1,20 +1,25 @@
 import React, { Component, Fragment } from "react";
-import About from '../components/About/About'
-// import AppLoader from "../components/AppLoader";
-// import AppHeader from "../components/AppHeader";
-// import AppHeaderSlider from "../components/AppHeaderSlider";
-// import TravelPlaces from "../components/TravelPlaces";
+import AppLoader from "../components/AppLoader";
+import AppHeader from "../components/AppHeader";
+import Footer from "../components/Footer/Footer";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "../components/Home/Home";
+import About from '../components/About/About';
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        <About />
-        {/* <AppLoader />
-        <AppHeader />
-        <AppHeaderSlider />
-        <TravelPlaces /> */}
-      </Fragment>
+      <BrowserRouter>
+        <Switch>
+          <Fragment>
+            <AppLoader />
+            <AppHeader />
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+            <Footer />
+          </Fragment>
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

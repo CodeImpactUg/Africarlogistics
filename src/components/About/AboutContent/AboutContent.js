@@ -8,9 +8,9 @@ const AboutContent = props => (
         <div className="container">
             <div className="about_content">
             <div className="about_cont_text">
-                <h2>Our Journey</h2>
+                <h2>About Us</h2>
                 <hr className="line_separator" />
-                <p className="main_par">Since 2009, our strong company culture and passion for our profession has resulted in our being named each year as one of the "Best Places To Work" in Los Angeles County. Our management is active on various travel advisory boards and committees for travel organizations, travel magazines (Afar, Travel+Leisure), major hotel brands, & more.</p>
+                <p className="main_par">Africar logistics endevours to get you the best possible prices you can get in town. With our professional and dedicated stuff you are assured of stellar customer service. All the prices quoted are in US dollars. The air-ticket prices are all for return journeys. We look forward to hearing from you and doing business with you. You can contact us through the contact us page and be rest assured someone will get back to you as soon as possible!.</p>
                 <div className="about_features">
                     <p><i className="fa fa-share"></i>First Class Flights</p>
                     <p><i className="fa fa-share"></i>5 Star Accommodations</p>
