@@ -1,0 +1,40 @@
+.service_header {
+    background: linear-gradient(rgba(51, 51, 51, 0.329), rgba(51, 51, 51, 0.329)), url('../../../assets/img/toursbg.jpg');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.service_header h3 {
+    color: #ffffff;
+    font-size: 220%;
+}
+
+.service_header h1 {
+    font-size: 700%;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+@media (max-width: 812px) {
+    .service_header {
+        padding: 0;
+        align-items: center;
+    }
+    .service_header h1 {
+        color: #ffffff;
+        font-size: 400%;
+    }
+}
+
+@media (max-width: 414px) {
+    .service_header h3 {
+        color: #ffffff;
+        font-size: 160%;
+    }
+}

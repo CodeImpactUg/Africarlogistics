@@ -36,6 +36,23 @@
 .navbar{
     width: auto !important;
 }
+
+
+/*    New Navigation Link Styles    */
+
+
+.nav__link {
+    color: #ffffff;
+    transition: .4s;
+}
+
+.nav__link:hover {
+    color: #cccccc;
+    text-decoration: none;
+    transition: .4s;
+}
+
+
 /* Preloder */
 
 #top,
