@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from 'react-router-dom'
 import "../assets/css/bootstrap/css/bootstrap.min.css";
 import "../assets/css/responsive.css";
 import "../assets/css/bootstrap/css/bootstrap-dropdownhover.css";
@@ -203,84 +204,31 @@ class AppHeader extends Component {
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto nav-links ml-auto">
-                      <Nav.Link href="#home" className="active">
-                        Home
+                      <Nav.Link className="active">
+                        <Link to="/" className="nav__link">
+                          Home
+                        </Link>
                       </Nav.Link>
-                      <NavDropdown title="Pages" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">
-                          Action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                          Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">
-                          Something
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                          Separated link
-                        </NavDropdown.Item>
-                      </NavDropdown>
-                      <NavDropdown title="Tour" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">
-                          Action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                          Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">
-                          Something
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                          Separated link
-                        </NavDropdown.Item>
-                      </NavDropdown>
-                      <NavDropdown title="Hotels" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">
-                          Action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                          Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">
-                          Something
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                          Separated link
-                        </NavDropdown.Item>
-                      </NavDropdown>
-                      <NavDropdown title="Cars" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">
-                          Action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                          Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">
-                          Something
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                          Separated link
-                        </NavDropdown.Item>
-                      </NavDropdown>
-                      <NavDropdown title="Flights" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">
-                          Action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                          Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">
-                          Something
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                          Separated link
-                        </NavDropdown.Item>
-                      </NavDropdown>
+                      <Nav.Link className="active">
+                        <Link to="/about" className="nav__link">
+                          About Us
+                        </Link>
+                      </Nav.Link>
+                      <Nav.Link className="active">
+                        <Link to="service" className="nav__link">
+                          Services 
+                        </Link>
+                      </Nav.Link>
+                      <Nav.Link className="active">
+                        <Link to="tours" className="nav__link">
+                          Tours
+                        </Link>
+                      </Nav.Link>
+                      <Nav.Link className="active">
+                        <Link to="contact" className="nav__link">
+                          Contact Us
+                        </Link>
+                      </Nav.Link>
                     </Nav>
                   </Navbar.Collapse>
                 </Navbar>

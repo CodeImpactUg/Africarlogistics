@@ -1,0 +1,69 @@
+.guest_review {
+    background: url('../../../assets/img/reviewbg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+
+.guest_review h2 {
+    font-size: 240%;
+    font-weight: bold;
+    color: #fff;
+}
+
+.line_separator {
+    width: 170px;
+    background-color: #fff;
+    height: 1px;
+    margin: 29px 0;  
+    margin-left: 0; 
+}
+
+.review_rwapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.review_card {
+    color: #fff;
+    position: relative;
+}
+
+.client_img {
+    position: absolute;
+    right: 30px;
+    bottom: 87px;
+}
+
+.review_card .card {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #a7a7a7;
+    padding: 30px 25px;
+}
+
+.insta_handle_date {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.insta_handle_date p {
+    font-size: 110%;
+}
+
+.insta_handle_date i {
+    font-size: 140%;
+}
+
+.flex {
+    flex: 1;
+}
+
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        background-image: none;
+    }
