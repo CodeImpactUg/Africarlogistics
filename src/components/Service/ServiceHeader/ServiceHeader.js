@@ -4,8 +4,9 @@ import './ServiceHeader.css'
 
 const ServiceHeader = props => (
     <section className="service_header">
-        <h3>Service with AfricarLogistics</h3>
-        <h1>Service</h1>
+        <div className="container">
+        <h1>Our Services</h1>
+        </div>
     </section>
 )
 

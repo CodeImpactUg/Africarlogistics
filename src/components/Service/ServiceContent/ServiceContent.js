@@ -14,13 +14,13 @@ const ServiceContent = props => (
         <div className="container">
             <SortBy />
           <div className="long_card_wrapper">
-            <span>Find Dubai activity & Family Fun thing to do in Dubai</span>
+            <span>Service with AfricarLogistics</span>
             <div className="long_card">
                 <div className="long_card_img">
                     <img src={LongCard1} alt="Service" />
                 </div>
                 <div className="long_card_cont">
-                    <h3>4x4 Sunset Desert Safari and Dhow Cruise Dinner</h3>
+                    <h3>Airfare Tickets</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec semper lectus. Suspendisse placerat enim mauris, eget lobortis nisi egestas et. Donec elementum metus et mi aliquam eleifend. Suspendisse volutpat egestas rhoncus.</p>
                 </div>
                 <div className="card_cont_sep" />
@@ -42,7 +42,7 @@ const ServiceContent = props => (
                     <img src={LongCard2} alt="Service" />
                 </div>
                 <div className="long_card_cont">
-                    <h3>4x4 Sunset Desert Safari and Dhow Cruise Dinner</h3>
+                    <h3>Truck and Car hire prices</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec semper lectus. Suspendisse placerat enim mauris, eget lobortis nisi egestas et. Donec elementum metus et mi aliquam eleifend. Suspendisse volutpat egestas rhoncus.</p>
                 </div>
                 <div className="card_cont_sep" />
@@ -64,7 +64,7 @@ const ServiceContent = props => (
                     <img src={LongCard3} alt="Service" />
                 </div>
                 <div className="long_card_cont">
-                    <h3>Yas Waterworld and Ferrari World Abu Dhabi</h3>
+                    <h3>Airport Transfers Fuel Inclusive</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec semper lectus. Suspendisse placerat enim mauris, eget lobortis nisi egestas et. Donec elementum metus et mi aliquam eleifend. Suspendisse volutpat egestas rhoncus.</p>
                 </div>
                 <div className="card_cont_sep" />
@@ -86,7 +86,7 @@ const ServiceContent = props => (
                     <img src={LongCard4} alt="Service" />
                 </div>
                 <div className="long_card_cont">
-                    <h3>Dubai Half-Day City Tour</h3>
+                    <h3>Trucks - Town Running No Fuel</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec semper lectus. Suspendisse placerat enim mauris, eget lobortis nisi egestas et. Donec elementum metus et mi aliquam eleifend. Suspendisse volutpat egestas rhoncus.</p>
                 </div>
                 <div className="card_cont_sep" />
@@ -108,7 +108,7 @@ const ServiceContent = props => (
                     <img src={LongCard5} alt="Service" />
                 </div>
                 <div className="long_card_cont">
-                    <h3>Ski Dubai Ski Slope Access</h3>
+                    <h3>Trucks - Upcountry No Fuel</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec semper lectus. Suspendisse placerat enim mauris, eget lobortis nisi egestas et. Donec elementum metus et mi aliquam eleifend. Suspendisse volutpat egestas rhoncus.</p>
                 </div>
                 <div className="card_cont_sep" />
@@ -130,7 +130,7 @@ const ServiceContent = props => (
                     <img src={LongCard6} alt="Service" />
                 </div>
                 <div className="long_card_cont">
-                    <h3>Dubai Skydiving</h3>
+                    <h3>AfricarLogistics Licensed Vehicles</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec semper lectus. Suspendisse placerat enim mauris, eget lobortis nisi egestas et. Donec elementum metus et mi aliquam eleifend. Suspendisse volutpat egestas rhoncus.</p>
                 </div>
                 <div className="card_cont_sep" />
