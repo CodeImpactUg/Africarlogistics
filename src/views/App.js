@@ -4,6 +4,10 @@ import AppHeader from "../components/AppHeader";
 import Footer from "../components/Footer/Footer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "../components/Home/Home";
+import Tour from "../components/Tour/Tour"
+
+
+import './App.css'
 
 class App extends Component {
   render() {
@@ -14,6 +18,7 @@ class App extends Component {
             <AppLoader />
             <AppHeader />
             <Route path="/" exact component={Home} />
+            <Route path="/tours" component={ Tour } />
             <Footer />
           </Fragment>
         </Switch>

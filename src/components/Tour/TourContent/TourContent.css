@@ -1,0 +1,141 @@
+.tour_content {
+    padding: 70px 0;
+}
+
+.tour_cont_wrapper {
+    display: flex;
+}
+
+.main {
+    width: 60%;
+}
+
+.sidebar {
+    width: 40%;
+    padding: 0 50px;
+}
+
+.tour_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+    border: transparent;
+    box-shadow: 0 1px 14px 1px #c0c0c0; 
+}
+
+.card_img {
+    width: 310px;
+}
+
+.card_img img {
+    width: 100%;
+}
+
+.tour_card_info  {
+    position: relative;
+}
+
+
+.tour_price {
+    background-color: #090774;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.tour_price span {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.tour_add_info h3 {
+    font-size: 130%;
+    font-weight: bold;
+    padding: 10px 30px;
+    padding-bottom: 0;
+}
+
+.tour_add_info p {
+    padding: 0 30px;
+    margin: 0;
+    font-size: 80%;
+    font-weight: bold;
+    color: #818181;
+}
+
+.tour_add_info p:last-child {
+    padding-bottom: 20px;
+}
+
+
+.card_btn {
+    border: 1px solid #44bd32;
+    padding: 8px 20px;
+    color: #44bd32;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-weight: bold;
+    transition: .40s ease-in-out;
+}
+
+.card_btn:hover {
+    background-color: #44bd32;
+    color: #ffffff;
+}
+
+.card_btn:hover {
+    text-decoration: none;
+    transition: .40s ease-in-out;
+}
+
+
+/* --------MEDIA QUERY--------- */
+
+
+@media (max-width: 989px) {
+    .tour_cont_wrapper {
+        flex-direction: column;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) {
+    .tour_card {
+        grid-template-columns: 1fr;
+    }
+
+    .card_img {
+        width: 100%;
+    }
+
+    .tour_card_info  {
+        position: static;
+    }
+
+    .card_btn {
+        position: static;
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tour_add_info  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .sidebar {
+        padding: 0;
+    }
+}
